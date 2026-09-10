@@ -86,19 +86,16 @@
 ## 📸 Скриншоты
 
 ### Главный экран
-![Главный экран](<img width="1910" height="920" alt="image" src="https://github.com/user-attachments/assets/0661b96e-c96d-4ef9-ad18-bf47f3aa1051" />)
+![Главный экран](<img width="1904" height="919" alt="Снимок экрана 2026-09-11 075015" src="https://github.com/user-attachments/assets/376fbdbb-dd06-4e1f-ad14-87d006e89eb6" />)
 
 ### Учёт физических лиц
-![Учёт физических лиц](<img width="603" height="162" alt="image" src="https://github.com/user-attachments/assets/4833aa8b-4ce4-40d4-93ea-3d020745ccc9" />
-)
+![Учёт физических лиц]()
 
 ### Расчёт налогов
-![Расчёт налогов](<img width="479" height="298" alt="image" src="https://github.com/user-attachments/assets/29bcae7d-106d-492a-afb5-96f4d57f5a3c" />
-)
+![Расчёт налогов]()
 
 ### Отправка уведомлений
-![Уведомления](<img width="464" height="213" alt="image" src="https://github.com/user-attachments/assets/32394c27-36dd-4c15-bf26-d22763cbea84" />
-)
+![Уведомления]()
 
 ---
 
