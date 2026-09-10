@@ -86,8 +86,7 @@
 ## 📸 Скриншоты
 
 ### Главный экран
-![Главный экран](<img width="367" height="191" alt="image" src="https://github.com/user-attachments/assets/7dad4bc1-3b2a-40a9-bd0f-3756ec6ce1cf" />
-)
+![Главный экран](<img width="1910" height="920" alt="image" src="https://github.com/user-attachments/assets/0661b96e-c96d-4ef9-ad18-bf47f3aa1051" />)
 
 ### Учёт физических лиц
 ![Учёт физических лиц](<img width="603" height="162" alt="image" src="https://github.com/user-attachments/assets/4833aa8b-4ce4-40d4-93ea-3d020745ccc9" />
