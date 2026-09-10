@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техническая поддержка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon icon.png" type="image/png">
+</head>
+<body>
+    <!-- Кнопка "Вернуться на главную" -->
+    <a href="index.html" class="return-home-button"><i class="fas fa-home"></i> Вернуться на главную</a>
+
+    <!-- Контент страницы технической поддержки -->
+    <div class="support-content">
+        <h1>Техническая поддержка</h1>
+        <p>Здесь вы можете найти контактную информацию для получения помощи по техническим вопросам.</p>
+
+        <!-- Форма обратной связи -->
+        <div class="feedback-form">
+            <h2>Форма обратной связи</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше ФИО:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Ваш email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Ваше сообщение:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

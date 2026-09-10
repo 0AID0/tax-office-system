@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка уведомлений</title>
+    <link rel="icon" href="favicon icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    /* Стилизация кнопки "Вернуться на главную" */
+    .return-home-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #007bff; /* Цвет фона */
+        color: #fff; /* Цвет текста */
+        text-decoration: none; /* Убираем подчеркивание ссылки */
+        border-radius: 5px; /* Закругленные углы */
+        transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+        font-weight: bold; /* Жирный текст */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+    }
+
+    .return-home-button:hover {
+        background-color: #0056b3; /* Цвет фона при наведении */
+    }
+
+    .return-home-button:active {
+        box-shadow: none; /* Убираем тень при нажатии */
+        transform: translateY(2px); /* Смещаем кнопку вниз при нажатии */
+    }
+
+    .return-home-button .fas {
+        margin-right: 5px; /* Отступ между иконкой и текстом */
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="return-home-button"><i class="fas fa-home"></i> Вернуться на главную страницу</a>
+
+        <h1>Отправка уведомлений</h1>
+
+        <form id="notification-form">
+            <label for="recipient-email">Адрес электронной почты получателя:</label>
+            <input type="email" id="recipient-email" name="recipient-email" required>
+            <label for="notification-subject">Тема уведомления:</label>
+            <input type="text" id="notification-subject" name="notification-subject" required>
+            <label for="notification-message">Текст уведомления:</label>
+            <textarea id="notification-message" name="notification-message" required></textarea>
+            <button type="submit">Отправить уведомление</button>
+        </form>
+
+        <script>
+            document.getElementById('notification-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var recipientEmail = document.getElementById('recipient-email').value;
+                var notificationSubject = document.getElementById('notification-subject').value;
+                var notificationMessage = document.getElementById('notification-message').value;
+
+                // Здесь вы можете добавить код для отправки уведомления, например, с использованием AJAX или других методов
+
+                alert('Уведомление успешно отправлено!');
+                this.reset();
+            });
+        </script>
+    </div>
+</body>
+</html>

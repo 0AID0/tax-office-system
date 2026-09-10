@@ -1,0 +1,448 @@
+/* Общие стили для всего экрана */
+html, body {
+    height: 100%; /* Занимаем всю высоту экрана */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--background-color); /* Используем переменную для цвета фона */
+}
+
+/* Стили для контейнера */
+.container {
+    width: 100%; /* Занимаем всю ширину экрана */
+    height: 100%; /* Занимаем всю высоту экрана */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для колонки */
+.column {
+    flex-basis: 48%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 17vh; /* Смещаем колонку вверх на половину высоты экрана */
+    transform: translateY(-50%); /* Корректируем позицию, чтобы колонка была по центру */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    color: var(--primary-color); /* Используем основной цвет для заголовков */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Стили для текста */
+p, label {
+    color: var(--text-color); /* Используем цвет текста */
+    margin-bottom: 15px;
+}
+
+/* Стили для ссылок */
+a {
+    color: var(--accent-color); /* Используем акцентный цвет для ссылок */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: var(--primary-color); /* Используем основной цвет для кнопок */
+    color: #fff; /* Белый текст на фоне кнопки */
+    border: none;
+    padding: 12px 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+button:hover {
+    background-color: #0056b3; /* Синий цвет при наведении */
+}
+
+/* Стили для кнопок в верхнем контейнере */
+.button-container-top {
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+/* Анимация для фона */
+.container {
+    animation: changeBackground 10s infinite alternate; /* Применяем анимацию */
+}
+
+@keyframes changeBackground {
+    0% { background-image: url('tq2le27kiaf7xf8nkqf0xyr7x1e0q9ir.jpeg.jpg'); } /* Первое изображение */
+    50% { background-image: url('a5480ca21a35d0f4458222de8ab5aebe.jpg'); } /* Второе изображение */
+    100% { background-image: url('b61f83a6c2cfc130fe6a903150b94fe9.jpg'); } /* Первое изображение снова */
+}
+
+/* Стили для формы */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #086cdf;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00b3fa;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Стили для заголовков формы */
+h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стили для кнопки возврата на главную */
+.return-home-button {
+    background-color: var(--primary-color); /* Используем основной цвет для кнопки */
+    color: #0066ff; /* Белый текст на фоне кнопки */
+    padding: 10px 20px; /* Подходящий отступ для кнопки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.return-home-button:hover {
+    background-color: #ffffff; /* Синий цвет при наведении */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #007bff; /* Синий цвет */
+    color: #fff; /* Белый текст на фоне кнопки */
+    border: none;
+    padding: 12px 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+button:hover {
+    background-color: #0559b3; /* Темно-синий цвет при наведении */
+}
+
+
+/* Стили для ссылок функций */
+.function-link {
+    background-color: var(--primary-color); /* Используем основной цвет для ссылок функций */
+    color: #fff; /* Белый текст на фоне ссылки */
+    padding: 12px 24px; /* Подходящий отступ для ссылки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border-radius: 5px; /* Закругляем углы ссылки */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+    display: block; /* Делаем ссылки блочными элементами для корректного отображения */
+    margin-bottom: 10px; /* Добавляем небольшой отступ между ссылками */
+}
+
+.function-link:hover {
+    background-color: #0056b3; /* Синий цвет при наведении */
+}
+
+/* Стили для кнопки "Вернуться на главную" */
+.return-home-button {
+    background-color: #ccc; /* Цвет фона кнопки */
+    color: #000; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Подходящий отступ для кнопки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+    display: inline-block; /* Делаем кнопку встроенным блочным элементом */
+}
+
+.return-home-button:hover {
+    background-color: #00aaf8; /* Цвет фона кнопки при наведении */
+}
+
+/* Общие стили для заголовков */
+h1, h2 {
+    color: var(--primary-color); /* Основной цвет для заголовков */
+}
+
+/* Общие стили для параграфов */
+p {
+    line-height: 1.6; /* Межстрочный интервал для лучшей читаемости текста */
+}
+
+.function-link {
+    color: #0084ff; /* Цвет ссылок (например, красный) */
+    text-decoration: none; /* Удалить подчеркивание ссылок, если необходимо */
+}
+
+.function-link:hover {
+    color: #00ffbf; /* Цвет ссылок при наведении (например, зеленый) */
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-contact-info p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    color: #007bff; /* Синий цвет */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+.footer-contact-info p {
+    margin: 5px 0;
+    color: #007bff; /* Синий цвет */
+}
+
+/* CSS стили для всплывающего столбца помощи */
+.help-column {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.help-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.help-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Цвета и фоны */
+body {
+    background-color: #f0f0f0; /* Цвет фона страницы */
+    color: #333; /* Цвет текста */
+}
+
+h1, h2 {
+    color: #007bff; /* Цвет заголовков */
+}
+
+button {
+    background-color: #007bff; /* Цвет кнопок */
+    color: #fff; /* Цвет текста на кнопках */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Границы таблицы */
+}
+
+th, td {
+    padding: 15px; /* Отступы в ячейках таблицы */
+    text-align: left;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилизация кнопки "Вернуться на главную" */
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.return-button:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+
+/* Стили для кнопок "Редактировать" и "Сохранить" */
+.edit-button, .save-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-button, .delete-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-button:active, .delete-button:active {
+    background-color: #004085;
+}
+
+
+main {
+    margin-left: 20px; /* Задайте желаемый отступ */
+}
+.tax-calculation, .tax-rates, .report-submission, .report-tracking {
+    margin-left: 20px; /* Задайте желаемый отступ */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.return-home-button {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.support-content {
+    margin-left: 20px; /* Отступ слева */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feedback-form {
+    margin-top: 20px;
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}

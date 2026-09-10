@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Налоговая инспекция</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon icon.png" type="image/png">
+    <script>
+        // Функция для перенаправления на страницу с функциями
+        function goToFunctionsPage() {
+            window.location.href = 'functions.html'; // Замените 'functions.html' на путь к странице с функциями
+        }
+    </script>
+</head>
+<body>
+    <!-- Контейнер для логотипа и кнопок -->
+    <div class="header-container">
+        <!-- Логотип -->
+        <div class="logo">
+            <img src="icons8-tax-office-64.png" alt="Логотип">
+        </div>
+
+        <!-- Контейнер для кнопок -->
+        <div class="button-container-top">
+            <!-- Кнопка "Функции" с иконкой и вызовом функции goToFunctionsPage() -->
+            <button onclick="goToFunctionsPage();"><i class="fas fa-cogs"></i> Функции</button>
+            <button onclick="location.href='about.html';"><i class="fas fa-info-circle"></i> О нас</button>
+            <button onclick="location.href='support.html';"><i class="fas fa-life-ring"></i> Тех.поддержка</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <h1>Добрый день!</h1>
+            <p class="intro">Данный сайт предназначен для сотрудников учёта финансовой информации!</p>
+            <!-- Форма поиска -->
+            <form action="/search-results.html" method="get">
+                <input type="text" id="search" name="search" placeholder="Поиск...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="privacy-policy.html">Политика конфиденциальности</a>
+        <a href="terms-of-service.html">Условия использования</a>
+        <a href="support.html" style="color: #007bff;">Связаться с нами</a>
+    </div>
+    <div class="footer-contact-info">
+        <p><a href="tel:+123456789" style="color: #007bff;">Телефон: +123456789</a></p>
+        <p><a href="mailto:example@example.com" style="color: #007bff;">Email: example@example.com</a></p>
+    </div>
+</footer>
+<!-- HTML код с всплывающим столбцом для помощи пользователю -->
+<div class="help-column">
+    <div class="help-header">
+        <span class="close-button" onclick="closeHelpColumn()">&times;</span>
+        Помощь
+    </div>
+    <div class="help-content">
+        <!-- Содержимое помощи для пользователя -->
+        <p>Чем могу помочь?.</p>
+        <script>
+            // JavaScript код для открытия и закрытия всплывающего столбца помощи
+            function closeHelpColumn() {
+                var helpColumn = document.querySelector('.help-column');
+                helpColumn.style.display = 'none';
+            }
+        </script>
+    </div>
+</div>
+</html>

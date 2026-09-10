@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учёт оплаты налогов</title>
+    <!-- Подключение стилей CSS для оформления страницы -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Учёт оплаты налогов</h1>
+        <!-- Кнопка "Вернуться на главную" -->
+        <a href="index.html" class="return-button">Вернуться на главную</a>
+    </header>
+
+    <main>
+        <!-- 1. Расчет налогов -->
+        <section class="tax-calculation">
+            <h2>Расчет налогов</h2>
+            <form id="taxCalculationForm">
+                <!-- Форма для ввода данных о доходе и транзакциях -->
+                <div class="form-group">
+                    <label for="income">Доход:</label>
+                    <input type="number" id="income" name="income" required>
+                </div>
+                <div class="form-group">
+                    <label for="expense">Расход:</label>
+                    <input type="number" id="expense" name="expense" required>
+                </div>
+                <div class="form-group">
+                    <label for="tax-rate">Налоговая ставка (%):</label>
+                    <input type="number" id="tax-rate" name="tax-rate" required>
+                </div>
+                <button type="button" onclick="calculateTax()">Рассчитать налоги</button>
+            </form>
+            <!-- Результаты расчета налогов будут отображены здесь -->
+            <div id="taxCalculationResult"></div>
+        </section>
+
+        <!-- 2. Налоговые ставки -->
+        <section class="tax-rates">
+            <h2>Налоговые ставки</h2>
+            <!-- Таблица для отображения данных о налоговых ставках -->
+            <table id="taxRatesTable">
+                <thead>
+                    <tr>
+                        <th>Категория дохода</th>
+                        <th>Ставка налога</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Низкий доход</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Средний доход</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Высокий доход</td>
+                        <td>30%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. Форма отправки отчёта -->
+        <section class="report-submission">
+            <h2>Отправка налогового отчёта</h2>
+            <form id="taxReportForm" action="submit_report.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="reportFile">Прикрепить отчёт (PDF, DOCX, XLSX):</label>
+                    <input type="file" id="reportFile" name="reportFile" accept=".pdf,.docx,.xlsx" required>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Дополнительная информация:</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea>
+                </div>
+                <button type="submit">Отправить отчёт</button>
+            </form>
+            <!-- Сообщение об успешной отправке отчёта или об ошибках будет отображаться здесь -->
+            <div id="reportSubmissionMessage"></div>
+        </section>
+
+        <!-- 4. Страница отслеживания статуса отчёта -->
+        <section class="report-tracking">
+            <h2>Страница отслеживания статуса отчёта</h2>
+            <p>Здесь будет информация о статусе отправленных отчётов.</p>
+        </section>
+    </main>
+
+    <!-- Подключение скриптов JavaScript для взаимодействия с пользователем -->
+    <script src="script.js"></script>
+</body>
+</html>
